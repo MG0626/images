@@ -145,7 +145,7 @@ jobs:
         shell: bash
         run: |
           sudo arch-chroot ./mountpoint bash - <<'EOF'
-          pacman -S --noconfirm linux-nabu linux-nabu-headers
+          pacman -S --noconfirm linux-nabu-6-16 linux-nabu-headers
           EOF
 
       - name: Install alsa ucm config
